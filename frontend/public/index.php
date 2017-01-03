@@ -5,15 +5,16 @@
      * or installation has not been done. Run the 
      * Setup Wizard. 
      */
-    
-    if(!file_exists("../app/storage/config/setup") ||
-        file_get_contents("../app/storage/config/setup") == 3 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
-        file_get_contents("../app/storage/config/setup") == 4 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
-        file_get_contents("../app/storage/config/setup") == 6 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
-        file_get_contents("../app/storage/config/setup") == 5 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
-        !file_exists("../app/storage/config/paperwork.json") && !$_SERVER['HTTP_X_REQUESTED_WITH'] || 
-        !file_exists("../app/storage/config/database.json") && !$_SERVER['HTTP_X_REQUESTED_WITH']) {
-            header("Location: setup.php");
+
+    if (1 == 2)    
+    // if(!file_exists("../app/storage/config/setup") ||
+    //     file_get_contents("../app/storage/config/setup") == 3 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
+    //     file_get_contents("../app/storage/config/setup") == 4 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
+    //     file_get_contents("../app/storage/config/setup") == 6 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
+    //     file_get_contents("../app/storage/config/setup") == 5 && !$_SERVER['HTTP_X_REQUESTED_WITH'] ||
+    //     !file_exists("../app/storage/config/paperwork.json") && !$_SERVER['HTTP_X_REQUESTED_WITH'] || 
+    //     !file_exists("../app/storage/config/database.json") && !$_SERVER['HTTP_X_REQUESTED_WITH']) {
+    //         header("Location: setup.php");
     }else{
         /**
          * Laravel - A PHP Framework For Web Artisans
